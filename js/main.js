@@ -114,6 +114,7 @@
        	'scrollTop': $target.offset().top
       }, 800, 'swing', function () {
       	window.location.hash = target;
+      	if (target === "#contact-us") field_focus();
       });
 
   	});  
