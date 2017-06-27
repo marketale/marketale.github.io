@@ -680,7 +680,7 @@ button.round, .button.round {
 button.stroke, .button.stroke {
 	background: transparent !important;
 	border: 3px solid transparent;
-	line-height: 4.4rem;
+	line-height: 3rem;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -1194,12 +1194,11 @@ a.menu-toggle {
 .intro-content .button {
 	border-color: #FFFFFF;
 	color: #FFFFFF;
-	height: 6.6rem;
-	line-height: 6rem;
-	padding: 0 3rem !important;
-	margin-top: 1rem;
+	height: auto;
+	padding: 1.3rem;
+	margin-top: 2rem;
 	font-family: "amplesoft-regular", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 }
@@ -1302,7 +1301,6 @@ a.menu-toggle {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
-	overflow: hidden;
 	border-bottom: 2px #3F3F3F solid;
 }
 .process-content {
@@ -1435,10 +1433,6 @@ a.menu-toggle {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 	color: white;
-	border-bottom: 1px #3F3F3F solid;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
 }
 #features .section-intro h1 {
 	color: #000000;
@@ -1478,12 +1472,11 @@ a.menu-toggle {
 .features-content .button {
 	border-color: #000000;
 	color: #000000;
-	height: 6.6rem;
-	line-height: 6rem;
-	padding: 0 3rem !important;
-	margin-top: 1rem;
+	height: auto;
+	padding: 1rem;
+	margin-top: 2rem;
 	font-family: "amplesoft-regular", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	display: none;
@@ -1541,10 +1534,7 @@ a.menu-toggle {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 9.6rem;
-	border-bottom: 1px #3F3F3F solid;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
+	border-top: 1px #3F3F3F solid;
 }
 .pricing-content {
 	margin-top: 6.6rem;
@@ -1682,12 +1672,11 @@ a.menu-toggle {
 .pricing-content .button {
 	border-color: #000000;
 	color: #000000;
-	height: 6.6rem;
-	line-height: 6rem;
-	padding: 0 3rem !important;
-	margin-top: 1rem;
+	height: auto;
+	padding: 1rem;
+	margin-top: 2rem;
 	font-family: "amplesoft-regular", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	display: none;
@@ -1743,10 +1732,7 @@ a.menu-toggle {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
-	border-bottom: 1px #3F3F3F solid;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
+	border-top: 1px #3F3F3F solid;
 }
 .faq-content {
 	margin-top: 5.4rem;
@@ -1758,12 +1744,11 @@ a.menu-toggle {
 .faq-content .button {
 	border-color: #000000;
 	color: #000000;
-	height: 6.6rem;
-	line-height: 6rem;
-	padding: 0 3rem !important;
-	margin-top: 1rem;
+	height: auto;
+	padding: 1rem;
+	margin-top: 2rem;
 	font-family: "amplesoft-regular", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	display: none;
@@ -1827,10 +1812,7 @@ a.menu-toggle {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 9.6rem;
-	border-bottom: 2px #3F3F3F solid;
-	width: 100%;
-	height: 100%;
-	overflow: scroll;
+	border-top: 1px #3F3F3F solid;
 }
 .intro-flat {
 	max-width: 100%;
@@ -2057,9 +2039,9 @@ footer h4 {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
-	height: 66px;
-	width: 60px;
-	line-height: 66px;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
 	text-align: center;
 	background: #49ace8;
 	color: #FFFFFF;
@@ -2076,7 +2058,7 @@ footer h4 {
 	line-height: inherit;
 }
 #go-top a:hover {
-	background: #ff7b29;
+	background: #0F121A;
 	color: #FFFFFF;
 }
 
