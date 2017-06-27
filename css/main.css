@@ -61,7 +61,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus {
-	color: #ff7b29;
+	color: #49ace8;
 }
 
 /**
@@ -1103,7 +1103,7 @@ a.menu-toggle {
 		border: none;
 	}
 	.main-navigation li a:hover {
-		color: #ff7b29;
+		color: #49ace8;
 	}
 	.main-navigation li.with-sep a {
 		padding-left: 0;
@@ -1114,7 +1114,7 @@ a.menu-toggle {
 	}
 	.main-navigation li.current > a {
 		background: none;
-		color: #ff7b29;
+		color: #49ace8;
 	}
 	.main-navigation li.current > a:after {
 		display: none;
