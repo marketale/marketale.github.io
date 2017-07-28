@@ -25,11 +25,51 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        function getTimeStamp() {
+            // Get local time as ISO string with offset at the end
+            var now = new Date();
+            var tzo = -now.getTimezoneOffset();
+            var dif = tzo >= 0 ? '+' : '-';
+            var pad = function(num) {
+                var norm = Math.abs(Math.floor(num));
+                return (norm < 10 ? '0' : '') + norm;
+            };
+            return now.getFullYear()
+                + '-' + pad(now.getMonth()+1)
+                + '-' + pad(now.getDate())
+                + 'T' + pad(now.getHours())
+                + ':' + pad(now.getMinutes())
+                + ':' + pad(now.getSeconds())
+                + '.' + pad(now.getMilliseconds())
+                + dif + pad(tzo / 60)
+                + ':' + pad(tzo % 60);
+        }
+
+        function getClientID() {
+            try {
+                var trackers = ga.getAll();
+                var i, len;
+                for (i = 0, len = trackers.length; i < len; i += 1) {
+                    if (trackers[i].get('trackingId') === 'UA-101784109-1') {
+                        return trackers[i].get('clientId');
+                    }
+                }
+            } catch(e) {}
+            return 'false';
+        }
+
         var sessionIdValue = new Date().getTime() + '.' + Math.random().toString(36).substring(5);
+		var timeStamp = getTimeStamp();
+		var clientId = getClientID();
 
         ga('create', 'UA-101784109-1', 'auto');
+
         ga('set', 'dimension1', sessionIdValue);
+        ga('set', 'dimension2', timeStamp);
+        ga('set', 'dimension3', clientId);
+
         ga('send', 'pageview');
+
 
 	</script>
 	
