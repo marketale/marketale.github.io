@@ -101,6 +101,37 @@
 	</script>
 	<!-- End Piwik Code -->
 
+	<!-- Piwik A/B Test -->
+	<script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['AbTesting::create', {
+            name: 'MarketaleAB1', // you can also use '1' (ID of the experiment) to hide the name
+            percentage: 50,
+            includedTargets: [{"attribute":"url","inverted":"0","type":"equals_simple","value":"http:\/\/marketale.com"}],
+            excludedTargets: [],
+            startDateTime: '2017/08/11 00:00:00 UTC',
+            endDateTime: '2017/08/13 23:59:59 UTC',
+            variations: [
+                {
+                    name: 'original',
+                    activate: function (event) {
+                        event.redirect('http://marketale.com');
+                    }
+                },
+                {
+                    name: 'conversion-optimization-partner', // you can also use '1' (ID of the variation) to hide the name
+                    activate: function(event) {
+                        event.redirect('http://marketale.com/welcome.html');
+                    }
+                }
+            ],
+            trigger: function () {
+                return true; // here you can further customize which of your visitors will participate in this experiment
+            }
+        }]);
+	</script>
+	<!-- Piwik A/B Test -->
+
 </head>
 
 <body id="top">
