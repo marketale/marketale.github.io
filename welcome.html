@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <meta charset="utf-8">
+	<title>Digital Analytics, Conversion Optimization & Marketing Automation Partner</title>
+	<meta name="description" content="Digital Conversion Rate Optimization service provider supporting you across Digital Analytics setup, Optimization, A/B Testing and Marketing Automation" />
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Analytics tag -->
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        function getTimeStamp() {
+            // Get local time as ISO string with offset at the end
+            var now = new Date();
+            var tzo = -now.getTimezoneOffset();
+            var dif = tzo >= 0 ? '+' : '-';
+            var pad = function(num) {
+                var norm = Math.abs(Math.floor(num));
+                return (norm < 10 ? '0' : '') + norm;
+            };
+            return now.getFullYear()
+                + '-' + pad(now.getMonth()+1)
+                + '-' + pad(now.getDate())
+                + 'T' + pad(now.getHours())
+                + ':' + pad(now.getMinutes())
+                + ':' + pad(now.getSeconds())
+                + '.' + pad(now.getMilliseconds())
+                + dif + pad(tzo / 60)
+                + ':' + pad(tzo % 60);
+        }
+
+        function getClientID() {
+            try {
+                var trackers = ga.getAll();
+                var i, len;
+                for (i = 0, len = trackers.length; i < len; i += 1) {
+                    if (trackers[i].get('trackingId') === 'UA-101784109-1') {
+                        return trackers[i].get('clientId');
+                    }
+                }
+            } catch(e) {}
+            return 'false';
+        }
+
+        var sessionIdValue = new Date().getTime() + '.' + Math.random().toString(36).substring(5);
+		var timeStamp = getTimeStamp();
+		var clientId = getClientID();
+
+        ga('create', 'UA-101784109-1', 'auto');
+
+        ga('set', 'dimension1', sessionIdValue);
+        ga('set', 'dimension2', timeStamp);
+        ga('set', 'dimension3', clientId);
+
+        ga('send', 'pageview');
+
+
+	</script>
+
+	<!-- Hotjar Tracking Code for marketale.com -->
+	<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:552414,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+
+	<!-- Piwik -->
+	<script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//urbanns.innocraft.cloud/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+	</script>
+	<!-- End Piwik Code -->
+
+</head>
+
+<body id="top">
+
+   <header>
+
+   	<div class="row">
+
+   		<div class="logo">
+	         <a href="#intro">marketale<br>
+			 </a>
+			<span class="caption-text">DIGITAL ANALYTICS & OPTIMIZATION</span>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#your-partner" title="">Your Partner</a></li>
+
+					<li><a class="smoothscroll"  href="#opportunity" title="">> Opportunity</a></li>
+
+					<li><a class="smoothscroll"  href="#our-approach" title="">> Our Approach</a></li>
+
+					<li><a class="smoothscroll"  href="#solutions" title="">> Solutions</a></li>
+
+					<li><a class="smoothscroll"  href="#why-us" title="">> Why us</a></li>
+
+					<li class="highlight with-sep"><a class="smoothscroll" href="#contact-us" title="">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+   	</div>
+
+   </header>
+
+
+
+
+   <span id="your-partner"></span>
+   <section id="intro">
+
+	   <div id="particles-js"></div>
+	   <script src="js/particles.min.js"></script>
+	   <script src="js/app.js"></script>
+
+	   <div class="shadow-overlay"></div>
+
+			<div class="intro-content">
+				<div class="row">
+
+					<div class="col-twelve">
+
+						<h1>Your Digital Analytics and Conversion Optimization Partner</h1>
+						<div id="up-index">
+						<a class="button stroke smoothscroll" href="#opportunity" title="">GET MORE FROM YOUR DIGITAL EFFORTS</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+   </section>
+
+
+
+
+
+
+
+
+    <span id="opportunity"></span>
+	<section id="features">
+
+	<div class="row section-intro">
+
+		<div class="col-twelve">
+
+			<h1>Websites and apps have holes in them, they leak Revenue!</h1>
+
+		</div>
+
+	</div>
+
+   	<div class="row features-content">
+
+   		<div class="features-list block-1-3 block-s-1-2 block-tab-full group">
+
+	      	<div class="bgrid feature">
+
+	            <div class="service-content">
+
+					<h3 class="h05">Digital can be complex across pages & journeys</h3>
+
+					<img src="images\leakage1.png" alt="">
+
+		            <p class="rev-leak-text">Prospects and Customers often get lost leading to leakage of potential revenue</p>
+
+	         	</div>
+
+				</div> <!-- /bgrid -->
+
+				<div class="bgrid feature">
+
+	            <div class="service-content">
+
+	            	<h3 class="h05">Companies get sub-optimal results on Digital Marketing</h3>
+
+					<img src="images\leakage2.png" alt="">
+
+		            <p class="rev-leak-text">Paid visitors do not find what they came for and drop mid way</p>
+
+
+	            </div>
+
+			   </div> <!-- /bgrid -->
+
+			   <div class="bgrid feature">
+
+	            <div class="service-content">
+
+	            	<h3 class="h05">Generic analytics report are not effective</h3>
+
+					<img src="images\leakage3.png" alt="">
+
+		            <p class="rev-leak-text">They tell you what's happening but not why and how to fix it</p>
+
+
+	            </div>
+
+			   </div> <!-- /bgrid -->
+
+			<a class="button stroke smoothscroll" href="#our-approach" title="">How we identify these revenue leakages</a>
+
+		</div>
+
+   	</div>
+
+	</section>
+
+
+
+
+
+
+
+   <span id="our-approach"></span>
+   <section id="pricing">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h1>We identify these leaky points using various methods</h1>
+
+   		</div>
+   	</div>
+
+   	<div class="row pricing-content">
+
+         <div class="pricing-tables block-1-4 group">
+
+            <div class="bgrid">
+
+            	<div class="price-block">
+
+            		<div class="top-part">
+
+	            		<h3 class="plan-title">Deep dive analyses of<br>user journeys</h3>
+	            	</div>
+
+	               <div class="bottom-part">
+					   		<img class="method-logo" src="images/method1.png" alt="" style="width: 30%; height: 30%;">
+					   <p class="price-month">Analyse traffic, funnels, journeys, site search and other such data for all visitors including those coming from marketing campaigns</p>
+
+	            	</div>
+
+            	</div>
+
+			   </div>
+
+            <div class="bgrid">
+
+				<div class="price-block">
+
+					<div class="top-part">
+
+						<h3 class="plan-title">Eye Tracking and<br>Session Replays</h3>
+					</div>
+
+					<div class="bottom-part">
+						<img class="method-logo" src="images/method2.png" alt="" style="width: 36%; height: 36%;">
+						<p class="price-month">Implement session and eye tracking capture tool to record sessions and analyse them to identify broken journeys<br><br></p>
+
+					</div>
+
+				</div>
+
+			  </div>
+
+           <div class="bgrid">
+
+			   <div class="price-block">
+
+				   <div class="top-part">
+
+					   <h3 class="plan-title">User Surveys and<br>User Testing</h3>
+				   </div>
+
+				   <div class="bottom-part">
+					   <img class="method-logo" src="images/method3.png" alt="" style="width: 37%; height: 37%;">
+					   <p class="price-month">Implement user survey and user testing tool to trigger popup surveys and analyse recorded sessions or comments<br><br></p>
+
+				   </div>
+
+			   </div>
+
+		   </div>
+
+			   <div class="bgrid">
+
+				   <div class="price-block">
+
+					   <div class="top-part">
+
+						   <h3 class="plan-title">Competitive<br>Research</h3>
+					   </div>
+
+					   <div class="bottom-part">
+						   <img class="method-logo" src="images/method4.png" alt="" style="width: 40%; height: 40%;">
+						   <p class="price-month">Use panel data from leading players to compare your stats with competition and identify optimization opportunities<br><br></p>
+
+					   </div>
+
+				   </div>
+
+			   </div>
+
+         </div>
+
+		<div class="b-center">
+			<a class="button stroke smoothscroll" href="#solutions" title="">How we solve it?</a>
+		</div>
+
+      </div>
+
+   </section>
+
+
+
+
+
+
+
+   <span id="solutions"></span>
+   <section id="faq">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h1>And work with you to plug leaks, increasing your Revenue!</h1>
+
+   		</div>
+   	</div>
+
+   	<div class="row faq-content">
+
+   		<div class="q-and-a block-1-3 block-s-1-2 block-tab-full group">
+
+   			<div class="bgrid">
+
+   				<h3 class="h3align">Implement A/B Test ideas working with you</h3>
+				<img class="method-logo" src="images/implement1.png" alt="" style="width: 50%; height: 50%;">
+				<p class="rev-leak-text">Use existing tools on your platform or implement new tools to optimize for conversions. Measure results to show impact.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3 class="h3align">Analyze and implement changes to Digital marketing campaigns</h3>
+				<img class="method-logo" src="images/implement2.png" alt="" style="width: 58%; height: 58%;">
+				<p class="rev-leak-text">Identify opportunities to increase effectiveness of digital marketing spends and work with you to implement</p>
+
+   			</div>
+
+			<div class="bgrid">
+
+				<h3 class="h3align">Enhance Marketing Automation and Analytics prowess</h3>
+				<img class="method-logo" src="images/implement3.png" alt="" style="width: 42%; height: 42%;">
+				<p class="rev-leak-text">Implement afresh or optimize your marketing automation deployment using data science and analytics</p>
+
+			</div>
+
+   		</div>
+		<br>
+		<div class="b-center">
+			<a class="button stroke smoothscroll" href="#why-us" title="">Why partner with us?</a>
+		</div>
+
+	</div>
+
+   </section>
+
+
+
+
+
+
+
+   <span id="why-us"></span>
+	<section id="about-us">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h1>We have done this before and are here to help!</h1>
+                   <p class="intro-sub">Team with professional experience across companies in the area of Digital Analytics and Digital Marketing Optimization</p>
+			</div>
+		</div>
+
+		<div class="row about-us-content">
+
+			<div class="about-us-tables block-1-4 group">
+
+				<div class="bgrid">
+
+					<div class="about-us-block">
+
+						<div class="bottom-part">
+							<img class="method-logo" src="images/aboutus1.png" alt="" style="width: 70%; height: 70%;">
+							<p>Expertise across digital analytics tools</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="bgrid">
+
+					<div class="about-us-block">
+
+						<div class="bottom-part">
+							<img class="method-logo" src="images/aboutus2.png" alt="" style="width: 67%; height: 67%;">
+							<p>Experience in campaign optimization and attribution</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="bgrid">
+
+					<div class="about-us-block">
+
+						<div class="bottom-part">
+							<img class="method-logo" src="images/aboutus3.png" alt="" style="width: 55%; height: 55%;">
+							<p>Experience across machine learning tools and libraries</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="bgrid">
+
+					<div class="about-us-block">
+
+						<div class="bottom-part">
+							<img class="method-logo" src="images/aboutus4.png" alt="" style="width: 48%; height: 48%;">
+							<p>Experience across various data visualization platforms</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+   <span id="contact-us"></span>
+   <footer id="footer">
+
+   	<div class="footer-main">
+
+   		<div class="row">
+
+			<div class="col-six mob-full tab-1-2">
+
+				<h4>Contact us</h4>
+
+				<div class="footer-subscribe">
+
+					<div class="subscribe-form">
+
+
+
+					<form id="mc-contact-form" class="group" action="http://formspree.io/knight.ravioli@gmail.com" method="post">
+
+						<input type="text" value="" name="dName" id="mc-name" placeholder="name" required="">
+						<!--
+						<input type="text" value="" name="dContactnumber" class="email" id="mc-contactnumber" placeholder="your contact number" required="">
+						-->
+
+						<textarea value="" name="dQuery" class="text-area" id="mc-query" placeholder="query" required=""></textarea>
+
+						<input type="email" value="" name="dEmail" id="mc-email" placeholder="email &amp; hit enter" required="">
+
+
+						<!-- CONFIG -->
+						<input type="hidden" name="_subject" value="New contact from Marketale">
+						<!-- /CONFIG -->
+
+						<input type="submit" name="subscribe" >
+
+						<label for="mc-email" class="subscribe-message"></label>
+
+					</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="col-six mob-full tab-1-2">
+
+				<div class="footer-logo">
+
+					<p>marketale</p>
+					<p class="footer-sub">ANALYTICS PVT LTD, BANGALORE INDIA</p>
+					<p class="footer-sub">
+						<a href="mailto:contact@marketale.com" style="color:#ffffff">contact@marketale.com</a>
+					</p>
+					<p class="footer-sub">(+91) 8880 600 100</p>
+
+				</div>
+
+				<div id="go-top" style="display: block;">
+					<a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+				</div>
+
+			</div>
+
+   	</div>
+	</div>
+
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script type="text/javascript">
+	   function field_focus() {
+           document.getElementById("mc-name").focus();
+	   }
+
+   </script>
+
+</body>
+
+</html>
